@@ -10,26 +10,41 @@
 
 int main(){
 	char  *s1 = (char*)malloc(128);
-	//char *s1 = "jkdenuiewn imwvoiiew ewvm ";
 	char  *s2 = (char*)malloc(128);
-	char  *s3 = (char*)malloc(128);
-	char  *s4 = (char*)malloc(128);
-	char *istr;
-	
-	istr= gets (s1);
-	//scanf("%255s",s2);
-	// скан только до пробела, почему?
-	//printf("%s\n",s1);
-		//printf("%c",*s1);
-
-	//for(int i = 0; i < strlen(s1);i++){
-	//	if(*s1 != ' '){
-	//		*s3 += *s1;
-	//	}
-	//	else{
-	//		s1++;
-	//	}
-	//}
-	printf("%s\n", s1);
+	char *istr1 = (char*)malloc(128);
+	char *istr2 = (char*)malloc(128);
+	char *istr3 = (char*)malloc(128);
+	char *istr4 = (char*)malloc(128);
+	char *istr5 = (char*)malloc(128);
+	char *istr6 = (char*)malloc(128);
+	char sep[100] = " ";
+	printf("put first str:");
+	istr1 = gets (s1);
+	printf("put secound str:");
+	istr2 = gets (s2);
+	istr3 = strtok (s1,sep);
+	printf("first str without SPACE: ");
+	 while (istr3 != NULL)
+   	 {
+     		printf ("%s",istr3);
+		istr5 = strcat(istr5,istr3);
+      		istr3 = strtok (NULL,sep);
+   	 }
+	printf("\n");
+	printf("secound str without SPACE: ");
+	istr4 = strtok (s2,sep);
+	while (istr4 != NULL)
+         {
+                printf ("%s",istr4);
+		istr6 = strcat(istr6,istr4);
+                istr4 = strtok (NULL,sep);
+         }
+	printf("\n");
+	if(strcmp(istr5,istr6) == 0){
+		printf("strings is equal\n");
+	}
+	else{
+		printf("strings is different\n");
+	}
 	return 0;
 }
