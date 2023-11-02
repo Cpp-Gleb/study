@@ -18,6 +18,7 @@ char *datafile = "array.txt";
 char buf[256];
 //int arr[get_value(buf,datafile)]; make dinamic array
 int arr[4];
+
 void sort(char*buf,char*datafile){
 	for (int i = 0; i < get_value(buf,datafile)-1; i++) {
         	for (int j = 0; j < get_value(buf,datafile)-1 - i; j++) {
@@ -33,7 +34,10 @@ void sort(char*buf,char*datafile){
 void put_for_file(int* arr ,char *datafile){
         FILE *fp = fopen(datafile, "w");
         if(fp){
-                fputs(arr,fp);
+		for(int i =0;i < ;i++){
+                	fputs(*arr,fp);
+			arr++;
+		}
                 fclose(fp);
                 printf("File has been written\n");
         }
@@ -45,7 +49,7 @@ void read_in_file(char*buf,char*datafile){
 	char sep[100] = " ";
 	char *istr = (char*)malloc(128);
         FILE *fp = fopen(datafile, "r");
-	buf = fgets(buf,256,fp);
+	//buf = fgets(buf,256,fp);
         if(fp){
 		istr = strtok(buf,sep);
 		arr[i] = (int)istr;
