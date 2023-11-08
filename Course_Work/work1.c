@@ -18,20 +18,24 @@ struct Person{
 };
 
 void Add(struct Person Person, char* datafile){
-	FILE *fp = fopen(datafile, "w");
+	FILE *fp = fopen(datafile, "a");
 	if(fp){
 		printf("Put contact First name: ");
 		scanf("%s", Person.first_name);
 		fputs(Person.first_name, fp);
+		fputs(" ", fp);
 		printf("Put contact Second name: ");
 		scanf("%s", Person.second_name);
 		fputs(Person.second_name, fp);
+		fputs(" ", fp);
 		printf("Put contact surename: ");
 		scanf("%s", Person.surname);
 		fputs(Person.surname, fp);
+		fputs(" ", fp);
 		printf("Put contact phone number: ");
 		scanf("%s", Person.telephone_number);
 		fputs(Person.telephone_number, fp);//make array of nums contacts and read number to it after that copy and print to func
+		fputs("\n", fp);
 		fclose(fp);
 		printf("Contact add to file\n");
 	}
@@ -39,6 +43,7 @@ void Add(struct Person Person, char* datafile){
 
 void Show(char * datafile){
 	char buffer[256];
+	printf("\nPhonebook\n**********************************************\nYour contasts:\n");
 	FILE *fp = fopen(datafile, "r");
 	if(fp){
 		while((fgets(buffer,256,fp)) != NULL){
@@ -46,6 +51,7 @@ void Show(char * datafile){
 		}
 		fclose(fp);
 	}
+	printf("\n");
 }
 
 void Find(){
