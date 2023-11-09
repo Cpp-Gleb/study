@@ -17,31 +17,31 @@ struct Person{
 	char* telephone_number;
 };
 
-void Add(struct Person Person, char* datafile){
+void Add(struct Person *Person, char* datafile){
 	FILE *fp = fopen(datafile, "a");
 	if(fp){
 		printf("Put contact First name: ");
-		scanf("%s", Person.first_name);
+		scanf("%s", Person -> first_name);
 
 		printf("Put contact Second name: ");
-		scanf("%s", Person.second_name);
+		scanf("%s", Person -> second_name);
 
 		printf("Put contact surename: ");
-		scanf("%s", Person.surname);
+		scanf("%s", Person -> surname);
 
 		printf("Put contact phone number: ");
-		scanf("%s", Person.telephone_number);
+		scanf("%s", Person -> telephone_number);
 
-		fputs(Person.first_name, fp);
+		fputs(Person -> first_name, fp);
                 fputs(" ", fp);
 
-		fputs(Person.second_name, fp);
+		fputs(Person -> second_name, fp);
                 fputs(" ", fp);
 
-		fputs(Person.surname, fp);
+		fputs(Person -> surname, fp);
                 fputs(" ", fp);
 
-		fputs(Person.telephone_number, fp);
+		fputs(Person -> telephone_number, fp);
 		fputs("\n", fp);
 		fclose(fp);
 		printf("Contact add to file\n");
@@ -58,7 +58,6 @@ void Show(char * datafile){
 		}
 		fclose(fp);
 	}
-	free(datafile);
 	printf("\n");
 }
 
@@ -76,7 +75,6 @@ void Find(struct Person *contacts, int count){
 		}
 	}
 	free(find_name);
-	free(contacts);
 	//put first_name number which we wanna find:
 	//binary search with surname
 	//print in console contact
@@ -108,11 +106,9 @@ void sort(struct Person *Person_cur, struct Person *Person_last){
 	}
 	free(s1);
 	free(s2);
-	free(Person_cut);
-	free(Person_last);
 }
 
-void Choise(enum Action op, char* datafile, struct Person Person, struct Person *contacts, int count){
+void Choise(enum Action op, char* datafile, struct Person *Person, struct Person *contacts, int count){
 	switch(op){
                         case ADD:
                                 Add(Person, datafile);
@@ -127,8 +123,6 @@ void Choise(enum Action op, char* datafile, struct Person Person, struct Person 
                                 printf("try again\n");
 				break;
 	}
-	free(datafile);
-	free(contacts);
 }
 
 int main(){
@@ -147,10 +141,10 @@ int main(){
         	contacts[i].surname = (char*)malloc(20);
 		contacts[i].telephone_number = (char*)malloc(15);
 
-		Choise(operand, datafile, contacts[i], &contacts, i);
+		Choise(operand, datafile, &contacts[i], &contacts[0], i);
 
-		if(i != 0)
-			sort(&contacts[i],  &contacts[i-1]);
+		//if(i != 0)
+		//	sort(&contacts[i],  &contacts[i-1]);
 
 		i++;
 	}
