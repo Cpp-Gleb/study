@@ -53,17 +53,21 @@ public:
         _products_name = "Discount card";
         _cost = 0;
     }
-    void get_cost();
-    string set_product_name();
-    int set_cost();
+    int get_cost();
+    void set_cost(int cost);
+    string set_product_name(string product_name);
     void show_products();
 };
 
 class Money_operation: public Buyer, public Pruducts{
-
+private:
+    int _sum;
 public:
+    Money_operation(){
+        _sum = 0;
+    }
     void transfer(); //credit_card, bank_account
-    void buy_product(); // credit card, cost
+    void buy_product(); // credit card, cost, sum
 };
 
 string Buyer::get_name(){
@@ -102,8 +106,41 @@ void Buyer::set_bank_account(std::string bank_account) {
     _bank_account = bank_account;
 }
 
-void Input_Output(string name, string surname, string second_name, string address, string credit_card, string bank_account){
+int Buyer::get_balance() {
+    return _balance;
+}
+void Buyer::set_balance(int balance) {
+    _balance = balance;
+}
+
+int Pruducts::get_cost() {
+    return _cost;
+}
+void Pruducts::set_cost(int cost) {
+    _cost = cost;
+}
+
+string Pruducts::set_product_name(string product_name) {
+    _products_name = product_name; //  in future input from file
+}
+void Pruducts::show_products() {
+    cout << _products_name << endl << "cost: " << _cost << endl;
+}
+
+void Money_operation::buy_product() {
+    // call Products::object
+    //if(object.cost <= Buyer::object){}
+}
+
+//In  future split func to many funcs and in main put it in while(true)
+void Input_Output(){
     class Buyer Tom;
+    string name;
+    string surname;
+    string second_name;
+    string address;
+    string credit_card;
+    string bank_account;
     cout << "Hello! You stay in our online shop!\n Follow the instructions on your display!\n";
     cout << "Put name here:";
     cin >> name;
@@ -124,20 +161,13 @@ void Input_Output(string name, string surname, string second_name, string addres
     Tom.set_address(address);
     Tom.set_credit_card(credit_card);
     Tom.set_bank_account(bank_account);
-    cout << "Your name: " << Tom.get_name() << endl;
-    cout << "Your surname: " << Tom.get_surname() << endl;
-    cout << "Your second name: " << Tom.get_second_name() << endl;
-    cout << "Your address: " << Tom.get_address() << endl;
+    cout << Tom.get_name() << " ";
+    cout << Tom.get_surname() << " ";
+    cout << Tom.get_second_name() << " ";
     cout <<"Thanks for trust to our shop! \n";
 }
 
 int main() {
-    string name;
-    string surname;
-    string second_name;
-    string address;
-    string credit_card;
-    string bank_account;
-    Input_Output(name, surname, second_name, address, credit_card, bank_account);
+    Input_Output();
     return 0;
 }
