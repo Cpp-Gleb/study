@@ -11,8 +11,18 @@ private:
     string _address;
     string _credit_card;
     string _bank_account;
-
+    int _balance;
 public:
+    Buyer(){
+        _surname = "Ivanov";
+        _name = "Ivan";
+        _second_name = "Ivanovich";
+        _address = "Ivanovskaya 95";
+        _credit_card = "xxxx - xxxx - xxxx - xxxx";
+        _bank_account = "xxx - xxx - xxx";
+        _balance = 0;
+    }
+
     string get_name();
     void set_name(string name);
 
@@ -25,12 +35,35 @@ public:
     string get_address();
     void set_address(string address);
 
-    string get_credit_card();
     void set_credit_card(string credit_card);
 
-    string get_bank_account();
     void set_bank_account(string bank_account);
 
+    int get_balance();
+    void set_balance(int balance);
+
+};
+
+class Pruducts{
+private:
+    string _products_name;
+    int _cost;
+public:
+    Pruducts(){
+        _products_name = "Discount card";
+        _cost = 0;
+    }
+    void get_cost();
+    string set_product_name();
+    int set_cost();
+    void show_products();
+};
+
+class Money_operation: public Buyer, public Pruducts{
+
+public:
+    void transfer(); //credit_card, bank_account
+    void buy_product(); // credit card, cost
 };
 
 string Buyer::get_name(){
@@ -69,14 +102,8 @@ void Buyer::set_bank_account(std::string bank_account) {
     _bank_account = bank_account;
 }
 
-int main() {
+void Input_Output(string name, string surname, string second_name, string address, string credit_card, string bank_account){
     class Buyer Tom;
-    string name;
-    string surname;
-    string second_name;
-    string address;
-    string credit_card;
-    string bank_account;
     cout << "Hello! You stay in our online shop!\n Follow the instructions on your display!\n";
     cout << "Put name here:";
     cin >> name;
@@ -102,5 +129,15 @@ int main() {
     cout << "Your second name: " << Tom.get_second_name() << endl;
     cout << "Your address: " << Tom.get_address() << endl;
     cout <<"Thanks for trust to our shop! \n";
+}
+
+int main() {
+    string name;
+    string surname;
+    string second_name;
+    string address;
+    string credit_card;
+    string bank_account;
+    Input_Output(name, surname, second_name, address, credit_card, bank_account);
     return 0;
 }
