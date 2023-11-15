@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -84,6 +85,7 @@ int main() {
     cout << "Put second name:";
     cin >> second_name;
     cout << "Put address:";
+    cin.ignore();
     getline(cin, address); // debug
     cout << "Put your credit card number:";
     cin >> credit_card;
