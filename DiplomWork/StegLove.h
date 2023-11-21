@@ -21,5 +21,3 @@ public:
     }
     void PrintAfterMarker();
 };
-
-class ShowHiddenFiles{}; // look how to work from binwalk may be func;
