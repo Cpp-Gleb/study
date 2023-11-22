@@ -120,7 +120,7 @@ void CashRegister::showItem() {
     for(auto & i : ::array){
         int k = i.getOnStockBefore() - i.getOnStock();
         for(int j = 0; j < k; j++){
-            cout << i.getDescription() << endl;
+            cout << endl << i.getDescription() << endl << endl;
         }
     }
 //for(array[i]){for(i < _onStockBefore - _onStock){print(array[i].description)}}
