@@ -1,0 +1,3 @@
+C:/Users/asus/Downloads/practice_cource/l3/Homework/untitled/cmake-build-debug/CMakeFiles/untitled.dir
+C:/Users/asus/Downloads/practice_cource/l3/Homework/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/asus/Downloads/practice_cource/l3/Homework/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
