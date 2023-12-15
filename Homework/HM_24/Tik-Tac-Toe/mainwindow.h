@@ -34,6 +34,10 @@ private slots:
 
     void on_C2_clicked();
 
+    void on_StartFisrst_clicked();
+
+    void on_StartSecond_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

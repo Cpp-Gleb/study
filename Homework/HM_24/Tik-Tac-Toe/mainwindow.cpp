@@ -68,3 +68,15 @@ void MainWindow::on_C2_clicked()
 
 }
 
+
+void MainWindow::on_StartFisrst_clicked()
+{
+
+}
+
+
+void MainWindow::on_StartSecond_clicked()
+{
+
+}
+
