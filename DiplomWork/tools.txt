@@ -1,0 +1,21 @@
+tools recomend from most useible to less
+
+
+png
+
+stegsolve
+zsteg
+binwalk
+Foremost
+Exiv2
+identify
+Pngcheck
+stegoVeritas
+Stegpy
+
+jpg
+
+binwalk
+Steghide
+identify
+stegoVeritas
