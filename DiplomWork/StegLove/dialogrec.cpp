@@ -11,7 +11,7 @@ DialogRec::DialogRec(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QString str= "C:\\qw\\CommonRec";
+    QString str= "./qw/CommonRec";
     QFileInfo fi(str + ".txt");
     QString fileName = fi.absoluteFilePath();
     QFile file(fileName);

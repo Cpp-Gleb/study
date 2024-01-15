@@ -17,17 +17,31 @@
    <item>
     <widget class="QTabWidget" name="tab">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab_1">
       <attribute name="title">
        <string>png</string>
       </attribute>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QLabel" name="png">
          <property name="text">
           <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Шпаргалка при работе с png хедерами</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="HelpPic">
+         <property name="text">
+          <string>фото</string>
          </property>
         </widget>
        </item>
@@ -37,11 +51,25 @@
       <attribute name="title">
        <string>jpg</string>
       </attribute>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QLabel" name="jpg">
          <property name="text">
           <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Шпаргалка при работе с jpg хедерами</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="HeadJpg">
+         <property name="text">
+          <string>фото</string>
          </property>
         </widget>
        </item>
@@ -62,6 +90,20 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QLabel" name="wav">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>dox</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="doc">
          <property name="text">
           <string>TextLabel</string>
          </property>

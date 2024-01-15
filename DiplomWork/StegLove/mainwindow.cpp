@@ -74,7 +74,7 @@ void MainWindow::slotSwitchFormat(){
         QFileInfo fi("./TextFile/wav.txt");
         _fileName = fi.absoluteFilePath();
     }
-    else if(_mask == "word"){
+    else if(_mask == "doc"){
         QFileInfo fi("./TextFile/word.txt");
         _fileName = fi.absoluteFilePath();
     }
