@@ -23,8 +23,9 @@ private:
 private slots:
     void slotOpenFile();
     void slotAbout();
-    void slotRecomend();
-    void slotRequest();
+    void slotRecomendCom();
+    void slotRecomendFile();
+    void slotRecomendTool();
     void slotReadForFile();
     void slotSwitchFormat();
 };
