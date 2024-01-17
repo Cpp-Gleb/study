@@ -28,5 +28,7 @@ private slots:
     void slotRecomendTool();
     void slotReadForFile();
     void slotSwitchFormat();
+    void on_ButtonMore_clicked();
+    void on_ButtonFormat_clicked();
 };
 #endif // MAINWINDOW_H

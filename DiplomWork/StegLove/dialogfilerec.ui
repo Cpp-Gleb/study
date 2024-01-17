@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tab">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab_1">
       <attribute name="title">
@@ -28,20 +28,6 @@
         <widget class="QLabel" name="png">
          <property name="text">
           <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Шпаргалка при работе с png хедерами</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="HelpPic">
-         <property name="text">
-          <string>фото</string>
          </property>
         </widget>
        </item>
@@ -56,20 +42,6 @@
         <widget class="QLabel" name="jpg">
          <property name="text">
           <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>Шпаргалка при работе с jpg хедерами</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="HeadJpg">
-         <property name="text">
-          <string>фото</string>
          </property>
         </widget>
        </item>

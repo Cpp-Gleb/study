@@ -18,7 +18,6 @@ DialogRec::DialogRec(QWidget *parent) :
     file.open(QFile::ReadOnly);
     QTextStream in(&file);
     ui->Label_com->setText((in.readAll()));
-    qDebug() << "window done";
 }
 
 

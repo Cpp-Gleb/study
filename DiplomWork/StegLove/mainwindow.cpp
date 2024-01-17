@@ -104,13 +104,25 @@ void MainWindow::slotRecomendFile(){
 
 }
 
+void MainWindow::on_ButtonFormat_clicked()
+{
+    DialogFileRec *dial;
+    dial = new DialogFileRec(this);
+    dial->show();
+}
+
 void MainWindow::slotRecomendTool(){
     DialogToolRec *dial;
     dial = new DialogToolRec(this);
     dial->show();
 }
 
-
+void MainWindow::on_ButtonMore_clicked()
+{
+    DialogToolRec *dial;
+    dial = new DialogToolRec(this);
+    dial->show();
+}
 
 void MainWindow::slotReadForFile(){
     QFile file(_fileName);
@@ -130,6 +142,12 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+
+
+
+
+
 
 
 
