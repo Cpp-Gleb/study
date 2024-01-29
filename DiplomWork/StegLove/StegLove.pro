@@ -13,19 +13,23 @@ SOURCES += \
     dialogrec.cpp \
     dialogtoolrec.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    scaledpixmap.cpp
 
 HEADERS += \
     dialogfilerec.h \
     dialogrec.h \
     dialogtoolrec.h \
-    mainwindow.h
+    mainwindow.h \
+    scaledpixmap.h
 
 FORMS += \
     dialogfilerec.ui \
     dialogrec.ui \
     dialogtoolrec.ui \
     mainwindow.ui
+
+win32:RC_FILE = file.rc
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

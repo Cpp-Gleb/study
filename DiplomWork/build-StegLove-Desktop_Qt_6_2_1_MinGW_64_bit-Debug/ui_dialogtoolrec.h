@@ -54,86 +54,104 @@ public:
         if (DialogToolRec->objectName().isEmpty())
             DialogToolRec->setObjectName(QString::fromUtf8("DialogToolRec"));
         DialogToolRec->resize(400, 300);
+        DialogToolRec->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout = new QHBoxLayout(DialogToolRec);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         tabWidget = new QTabWidget(DialogToolRec);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setStyleSheet(QString::fromUtf8(""));
         tab_1 = new QWidget();
         tab_1->setObjectName(QString::fromUtf8("tab_1"));
+        tab_1->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout_2 = new QHBoxLayout(tab_1);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         binwalk = new QLabel(tab_1);
         binwalk->setObjectName(QString::fromUtf8("binwalk"));
+        binwalk->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout_2->addWidget(binwalk);
 
         tabWidget->addTab(tab_1, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tab_2->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout_3 = new QHBoxLayout(tab_2);
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         zsteg = new QLabel(tab_2);
         zsteg->setObjectName(QString::fromUtf8("zsteg"));
+        zsteg->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout_3->addWidget(zsteg);
 
         tabWidget->addTab(tab_2, QString());
         Exiv2 = new QWidget();
         Exiv2->setObjectName(QString::fromUtf8("Exiv2"));
+        Exiv2->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout_4 = new QHBoxLayout(Exiv2);
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         exiv2 = new QLabel(Exiv2);
         exiv2->setObjectName(QString::fromUtf8("exiv2"));
+        exiv2->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout_4->addWidget(exiv2);
 
         tabWidget->addTab(Exiv2, QString());
         StegHide = new QWidget();
         StegHide->setObjectName(QString::fromUtf8("StegHide"));
+        StegHide->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout_5 = new QHBoxLayout(StegHide);
         horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
         steghide = new QLabel(StegHide);
         steghide->setObjectName(QString::fromUtf8("steghide"));
+        steghide->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout_5->addWidget(steghide);
 
         tabWidget->addTab(StegHide, QString());
         StegSolve = new QWidget();
         StegSolve->setObjectName(QString::fromUtf8("StegSolve"));
+        StegSolve->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout_6 = new QHBoxLayout(StegSolve);
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
         stegsolve = new QLabel(StegSolve);
         stegsolve->setObjectName(QString::fromUtf8("stegsolve"));
+        stegsolve->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout_6->addWidget(stegsolve);
 
         tabWidget->addTab(StegSolve, QString());
         Audacity = new QWidget();
         Audacity->setObjectName(QString::fromUtf8("Audacity"));
+        Audacity->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout_7 = new QHBoxLayout(Audacity);
         horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         audacity = new QLabel(Audacity);
         audacity->setObjectName(QString::fromUtf8("audacity"));
+        audacity->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout_7->addWidget(audacity);
 
         tabWidget->addTab(Audacity, QString());
         Hexeditor = new QWidget();
         Hexeditor->setObjectName(QString::fromUtf8("Hexeditor"));
+        Hexeditor->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout_8 = new QHBoxLayout(Hexeditor);
         horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
         hexedit = new QLabel(Hexeditor);
         hexedit->setObjectName(QString::fromUtf8("hexedit"));
+        hexedit->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout_8->addWidget(hexedit);
 
         tabWidget->addTab(Hexeditor, QString());
         Stegolsb = new QWidget();
         Stegolsb->setObjectName(QString::fromUtf8("Stegolsb"));
+        Stegolsb->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout_9 = new QHBoxLayout(Stegolsb);
         horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
         stegolsb = new QLabel(Stegolsb);
         stegolsb->setObjectName(QString::fromUtf8("stegolsb"));
+        stegolsb->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout_9->addWidget(stegolsb);
 

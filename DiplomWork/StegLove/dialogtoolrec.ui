@@ -13,19 +13,31 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
     <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="currentIndex">
       <number>7</number>
      </property>
      <widget class="QWidget" name="tab_1">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>Binwalk</string>
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QLabel" name="binwalk">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -34,12 +46,18 @@
       </layout>
      </widget>
      <widget class="QWidget" name="tab_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>Zsteg</string>
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
         <widget class="QLabel" name="zsteg">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -48,12 +66,18 @@
       </layout>
      </widget>
      <widget class="QWidget" name="Exiv2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>Exiv2</string>
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
         <widget class="QLabel" name="exiv2">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -62,12 +86,18 @@
       </layout>
      </widget>
      <widget class="QWidget" name="StegHide">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>StegHide</string>
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
         <widget class="QLabel" name="steghide">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -76,12 +106,18 @@
       </layout>
      </widget>
      <widget class="QWidget" name="StegSolve">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>StegSolve</string>
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_6">
        <item>
         <widget class="QLabel" name="stegsolve">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -90,12 +126,18 @@
       </layout>
      </widget>
      <widget class="QWidget" name="Audacity">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>Audacity</string>
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_7">
        <item>
         <widget class="QLabel" name="audacity">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -104,12 +146,18 @@
       </layout>
      </widget>
      <widget class="QWidget" name="Hexeditor">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>Hex-editor </string>
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_8">
        <item>
         <widget class="QLabel" name="hexedit">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -118,12 +166,18 @@
       </layout>
      </widget>
      <widget class="QWidget" name="Stegolsb">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>Stego-lsb</string>
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_9">
        <item>
         <widget class="QLabel" name="stegolsb">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>

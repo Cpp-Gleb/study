@@ -15,8 +15,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pixmap("picture.png");// сделать картинку подстраивоемой под размер окна
-    ui->label_picture->setPixmap(pixmap);
+    QPixmap pixmap("picture.png");
+    ui->label_picture->setScaledPixmap(pixmap);
+
     QMenu *pm_ht = menuBar()->addMenu(" &О Программе |");
 
         QAction *action_show = new QAction(tr("Открыть справку..."), pm_ht);
@@ -86,7 +87,7 @@ void MainWindow::slotSwitchFormat(){
 
 
 void MainWindow::slotAbout(){
-    QMessageBox::about(0, "О програме", "Для начала работы: \n    Нажать в меню 'файл', выбрать файл, получить реокмендации\nДля получения общих или подробных рекомендаций:\n    Нажать в меню 'Рекомендации':\n    Рекомендации общие:\n        Понятия стеганографии и, что делать в непонятных ситуациях\n    Рекомендации расширенные:\n        Информация о файлах и утилитах\n");
+    QMessageBox::about(0, "О програме", "Для начала работы: \n    Нажать в меню 'файл', выбрать файл, получить рекомендации\nДля получения общих или подробных рекомендаций:\n    Нажать в меню 'Рекомендации':\n    Рекомендации общие:\n        Понятия стеганографии и, что делать в непонятных ситуациях\n    Рекомендации расширенные:\n        Информация о файлах и утилитах\n");
 }
 
 void MainWindow::slotRecomendCom(){

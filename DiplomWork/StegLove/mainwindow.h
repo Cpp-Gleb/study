@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QtWidgets>
+#include "scaledpixmap.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -31,4 +32,6 @@ private slots:
     void on_ButtonMore_clicked();
     void on_ButtonFormat_clicked();
 };
+
+
 #endif // MAINWINDOW_H

@@ -13,10 +13,13 @@
   <property name="windowTitle">
    <string>StegLove</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(169, 228, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
        <spacer name="horizontalSpacer_2">
         <property name="orientation">
@@ -24,16 +27,31 @@
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>37</width>
-          <height>17</height>
+          <width>40</width>
+          <height>20</height>
          </size>
         </property>
        </spacer>
       </item>
       <item>
-       <widget class="QLabel" name="label_picture">
+       <widget class="ScaledPixmap" name="label_picture">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>250</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(170, 0, 255);</string>
+        </property>
         <property name="text">
-         <string>Picture StegLove</string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -56,6 +74,12 @@
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
        <widget class="QLineEdit" name="label_format">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(175, 14, 255);
+gridline-color: rgb(85, 0, 127);
+color:rgb(169, 228, 255);
+border-radius: 5px;</string>
+        </property>
         <property name="text">
          <string>Формат файла</string>
         </property>
@@ -66,6 +90,20 @@
       </item>
       <item>
        <widget class="QPushButton" name="ButtonFormat">
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton {
+    border-radius:  5px;
+    background-color: rgb(175, 14, 255);
+	color: rgb(0, 255, 255);
+	border-color: rgb(85, 0, 127);
+}
+
+QPushButton:hover{
+    background-color:rgb(255, 255, 255);
+	color: rgb(175, 14, 255);
+}</string>
+        </property>
         <property name="text">
          <string>Подробнее о форматах...</string>
         </property>
@@ -87,42 +125,73 @@
      </layout>
     </item>
     <item>
-     <widget class="QTextBrowser" name="textBrowser_rec">
-      <property name="markdown">
-       <string>Выберете файл в меню для получение информации по утилитам
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTextBrowser" name="textBrowser_rec">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(175, 14, 255);
+border-color: rgb(85, 0, 127);
+color:rgb(169, 228, 255);
+border-radius: 5px;</string>
+          </property>
+          <property name="markdown">
+           <string>Выберете файл в меню для получение информации по утилитам
 
 </string>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:5px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Выберете файл в меню для получение информации по утилитам&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
       <item>
-       <spacer name="horizontalSpacer_4">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="ButtonMore">
-        <property name="text">
-         <string>Подробнее про Утилиты...</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ButtonMore">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    border-radius:  5px;
+    background-color: rgb(175, 14, 255);
+	color: rgb(0, 255, 255);
+	border-color: rgb(85, 0, 127);
+}
+
+QPushButton:hover{
+    background-color:rgb(255, 255, 255);
+	color: rgb(175, 14, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string>Подробнее про Утилиты...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </item>
@@ -152,6 +221,13 @@ p, li { white-space: pre-wrap; }
    </property>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ScaledPixmap</class>
+   <extends>QLabel</extends>
+   <header>scaledpixmap.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

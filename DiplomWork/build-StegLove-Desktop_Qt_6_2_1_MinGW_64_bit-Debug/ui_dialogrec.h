@@ -32,6 +32,7 @@ public:
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         Label_com = new QLabel(DialogRec);
         Label_com->setObjectName(QString::fromUtf8("Label_com"));
+        Label_com->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout->addWidget(Label_com);
 
