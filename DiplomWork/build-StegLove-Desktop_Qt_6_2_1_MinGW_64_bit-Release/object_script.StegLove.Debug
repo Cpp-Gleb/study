@@ -1,0 +1,10 @@
+debug/dialogfilerec.o
+debug/dialogrec.o
+debug/dialogtoolrec.o
+debug/main.o
+debug/mainwindow.o
+debug/scaledpixmap.o
+debug/moc_dialogfilerec.o
+debug/moc_dialogrec.o
+debug/moc_dialogtoolrec.o
+debug/moc_mainwindow.o

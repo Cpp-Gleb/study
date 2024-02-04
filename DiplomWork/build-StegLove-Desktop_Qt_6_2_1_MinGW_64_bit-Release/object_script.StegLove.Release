@@ -1,0 +1,10 @@
+release/dialogfilerec.o
+release/dialogrec.o
+release/dialogtoolrec.o
+release/main.o
+release/mainwindow.o
+release/scaledpixmap.o
+release/moc_dialogfilerec.o
+release/moc_dialogrec.o
+release/moc_dialogtoolrec.o
+release/moc_mainwindow.o

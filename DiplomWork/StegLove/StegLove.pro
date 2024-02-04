@@ -29,7 +29,7 @@ FORMS += \
     dialogtoolrec.ui \
     mainwindow.ui
 
-win32:RC_FILE = file.rc
+win32:RC_FILE = file2.rc
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

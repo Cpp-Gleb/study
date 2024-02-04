@@ -14,7 +14,9 @@
    <string>О Форматах</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-color: rgb(254, 255, 211);
+border-color: rgb(254, 255, 211);
+color:rgb(85, 85, 255);</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>

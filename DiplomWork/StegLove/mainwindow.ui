@@ -14,7 +14,7 @@
    <string>StegLove</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(169, 228, 255);</string>
+   <string notr="true">background-color:rgb(254, 255, 211);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -75,9 +75,9 @@
       <item>
        <widget class="QLineEdit" name="label_format">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(175, 14, 255);
+         <string notr="true">background-color:rgb(85, 85, 255);
 gridline-color: rgb(85, 0, 127);
-color:rgb(169, 228, 255);
+color:rgb(254, 255, 211);
 border-radius: 5px;</string>
         </property>
         <property name="text">
@@ -94,14 +94,14 @@ border-radius: 5px;</string>
          <string notr="true">
 QPushButton {
     border-radius:  5px;
-    background-color: rgb(175, 14, 255);
-	color: rgb(0, 255, 255);
+    background-color: rgb(85, 85, 255);
+	color: rgb(254, 255, 211);
 	border-color: rgb(85, 0, 127);
 }
 
 QPushButton:hover{
     background-color:rgb(255, 255, 255);
-	color: rgb(175, 14, 255);
+	color: rgb(85, 85, 255);
 }</string>
         </property>
         <property name="text">
@@ -131,9 +131,9 @@ QPushButton:hover{
         <item>
          <widget class="QTextBrowser" name="textBrowser_rec">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(175, 14, 255);
+           <string notr="true">background-color: rgb(85, 85, 255);
 border-color: rgb(85, 0, 127);
-color:rgb(169, 228, 255);
+color:rgb(254, 255, 211);
 border-radius: 5px;</string>
           </property>
           <property name="markdown">
@@ -176,14 +176,14 @@ p, li { white-space: pre-wrap; }
           <property name="styleSheet">
            <string notr="true">QPushButton {
     border-radius:  5px;
-    background-color: rgb(175, 14, 255);
-	color: rgb(0, 255, 255);
+    background-color: rgb(85, 85, 255);
+	color: rgb(254, 255, 211);
 	border-color: rgb(85, 0, 127);
 }
 
 QPushButton:hover{
     background-color:rgb(255, 255, 255);
-	color: rgb(175, 14, 255);
+	color: rgb(85, 85, 255);
 }</string>
           </property>
           <property name="text">
